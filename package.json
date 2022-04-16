@@ -1,43 +1,28 @@
 {
   "name": "chat-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "@mui/material": "^5.6.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.5",
-    "@testing-library/user-event": "^13.5.0",
-    "express": "^4.17.3",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0",
-    "socket.io": "^4.4.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "Realtime chat app with rooms",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server",
+    "dev": "nodemon server"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvaanc/chat-app.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Danny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvaanc/chat-app/issues"
+  },
+  "homepage": "https://github.com/dvaanc/chat-app#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.2",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
